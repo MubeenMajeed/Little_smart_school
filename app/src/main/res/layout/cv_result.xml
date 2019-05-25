@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TableLayout
+        android:background="@drawable/rec"
+        android:id="@+id/cv_s_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"><!-- stretch the second column of the layout-->
+
+        <!-- first row of the table layout-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/cv_res_time"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="23/01/2019"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/cv_res_subject"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/cv_res_total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="100"
+                android:textColor="#000"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/cv_res_gain"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="3"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/cv_res_grade"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="3"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

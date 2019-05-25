@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".STUDENT.STUDENT_RESULTS">
+
+    <TextView
+        android:id="@+id/res_txt_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW RESULT "
+        android:layout_margin="10dp"
+        android:textSize="16dp"/>
+
+    <EditText
+       android:id="@+id/res_edt_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rec"
+        android:inputType="number"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/res_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ADD NEW RESULT"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableLayout
+            android:background="@drawable/rec"
+            android:id="@+id/cv_s_table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"><!-- stretch the second column of the layout-->
+
+            <!-- first row of the table layout-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/cv_res_time"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="DATE"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/cv_res_subject"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SUBJECT"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/cv_res_total"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="TOTAL"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/cv_res_gain"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="GAIN"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/cv_res_grade"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="GRADE"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RES_RV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUP_EMP">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:hint="Name"/>
+            <EditText
+                android:id="@+id/signup_emial"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:inputType="textEmailAddress"
+                android:hint="Email"/>
+            <EditText
+                android:id="@+id/signup_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:inputType="number"
+                android:maxLength="11"
+                android:hint="Number"/>
+
+            <EditText
+                android:id="@+id/signup_cnic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:inputType="number"
+                android:maxLength="13"
+                android:hint="CNIC NO"/>
+
+            <EditText
+                android:id="@+id/signup_degree"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:hint="DEGREE"/>
+
+            <EditText
+                android:id="@+id/signup_subject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:hint="SUBJECT"/>
+            <EditText
+                android:id="@+id/signup_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:hint="Address"/>
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:hint="Password"/>
+            <EditText
+                android:id="@+id/signup_confrom_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:hint="Confrom password"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="JOB TYPE" />
+
+                <Spinner
+                    android:id="@+id/signup_emp_spin"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NEWS.ADD_NEWS">
+
+    <EditText
+        android:id="@+id/ad_n_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/sign"
+        android:hint="Tittle"/>
+
+    <EditText
+        android:id="@+id/ad_n_details"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="10dp"
+        style="@style/sign"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:hint="Details"/>
+
+    <Button
+        android:id="@+id/ad_n_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Auto write with voice"/>
+
+    <Button
+        android:id="@+id/ad_n_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Publish news"/>
+
+</LinearLayout>

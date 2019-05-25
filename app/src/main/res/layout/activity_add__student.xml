@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".STUDENT.ADD_STUDENT">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD STUDENT"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/s_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                style="@style/sign"
+                android:hint="Name"/>
+
+
+            <EditText
+                android:id="@+id/s_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:inputType="number"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="11"
+                android:hint="Number"/>
+
+
+
+            <EditText
+                android:id="@+id/s_class"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:inputType="number"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Class"/>
+
+
+            <EditText
+                android:id="@+id/s_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/sign"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Address"/>
+
+
+
+            <Button
+                android:id="@+id/s_btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ADD NEW STUDENT"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

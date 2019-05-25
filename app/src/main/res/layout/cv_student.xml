@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#e4e4e4"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cv_stu_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="MUBEEN NAME"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/cv_stu_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLASS 9"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"/>
+
+
+            <TextView
+                android:id="@+id/cv_stu_number"
+                android:layout_width="150dp"
+                android:layout_below="@id/cv_stu_name"
+                android:layout_height="wrap_content"
+                android:text="NUMBER 03157645145"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/cv_stu_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_below="@id/cv_stu_number"
+                android:text="CLASS 9"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/cv_stu_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_stu_address"
+                android:text="RESULT"/>
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
