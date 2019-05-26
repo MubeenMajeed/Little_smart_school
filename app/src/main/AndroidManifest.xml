@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".Sign_in_EMP"  android:label="Login Teacher" />
+        <activity
+            android:name=".Sign_in_EMP"
+            android:label="Login Teacher" />
         <activity android:name=".ADMIN" />
         <activity android:name=".SignUP_EMP" />
         <activity
@@ -34,6 +36,7 @@
         <activity android:name=".COMMON_LOGIN_PAGE" />
         <activity android:name=".PARENT_DASHBOARD" />
         <activity android:name=".STUDENT.STUDENT_RESULTS" />
+        <activity android:name=".FEE.FEE"></activity>
     </application>
 
 </manifest>
